@@ -16,15 +16,15 @@ export default function VideoFeature({ item }: Props) {
         style={{ backgroundImage: `url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80)` }}/>
 
         <div onClick={() => navigate("/media")}
-        className="absolute top-6 left-6 cursor-pointer text-2xl text-black"> <IoMdArrowRoundBack /></div>
+        className="absolute top-6 left-6 cursor-pointer text-2xl text-white/65"><IoMdArrowRoundBack /></div>
 
-      <div className="relative z-10 w-full max-w-3xl px-6">
-  <div className="bg-black rounded-2xl overflow-hidden shadow-2xl aspect-video">
-    <video controls autoPlay className="w-full h-full">
-      <source src={item.url} />
-    </video>
+        <div className="relative w-full max-w-3xl px-6">
+          <div className="bg-black rounded-2xl overflow-hidden shadow-2xl aspect-video">
+            <video controls autoPlay className="w-full h-full">
+              <source src={item.url} />
+            </video>
+          </div>
         </div>
-      </div>
 
     </div>
   );

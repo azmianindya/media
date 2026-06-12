@@ -15,10 +15,10 @@ export default function MediaDetailPage() {
   }
 
   return (
-    <>
+    <div>
       {item.type === "VIDEO" && <VideoFeature item={item} />}
       {item.type === "IMAGE" && <ImageFeature item={item} />}
       {item.type === "MUSIC" && <MusicFeature item={item} />}
-    </>
+    </div>
   );
 }

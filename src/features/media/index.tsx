@@ -20,10 +20,10 @@ export default function MediaFeature() {
   );
 
   return (
-    <div className="min-h-screen py-12 px-6 bg-linear-to-br from-blue-50 via-indigo-50 to-purple-50 font-serif">
+    <div className="min-h-screen py-12 px-6 bg-linear-to-br from-blue-50 to-purple-50 font-serif">
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-bold tracking-tight text-gray-800">Media</h1>
-        <div className="w-12 h-0.5 bg-indigo-500 mx-auto mt-3" />
+        <h1 className="text-5xl font-bold text-gray-800">Media</h1>
+        <div className="w-12 h-0.5 bg-blue-500 mx-auto mt-3" />
       </div>
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {mediaList.map((item, i) => (
